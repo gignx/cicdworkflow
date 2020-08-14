@@ -9,14 +9,14 @@ script:
   - docker run -e CI=true cicdworkflow  npm run test
 
 
-deploy:
-  provider: elasticbeanstalk
-  region: eu-central-1
-  app: workflowtest
-  env: Workflowtest-env
-  bucket_name: elasticbeanstalk-eu-central-1-581299596325
-  bucket_path: workflowtest
-  on:
-    branch: master
-  access_key_id: "$AWS_ACCESS_KEY"
-  secret_access_key: "$AWS_SECRET_KEY"
+#deploy:
+#  provider: elasticbeanstalk
+#  region: eu-central-1
+#  app: workflowtest
+#  env: Workflowtest-env
+#  bucket_name: elasticbeanstalk-eu-central-1-581299596325
+#  bucket_path: workflowtest
+#  on:
+#    branch: master
+#  access_key_id: "$AWS_ACCESS_KEY"
+#  secret_access_key: "$AWS_SECRET_KEY"
